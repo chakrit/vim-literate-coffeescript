@@ -7,10 +7,11 @@ if exists('b:current_syntax') && b:current_syntax == 'litcoffee'
   finish
 endif
 
-runtime! syntax/markdown.vim
+runtime! syntax/ghmarkdown.vim
 unlet b:current_syntax
 
 syn clear markdownCode
+setf ghmarkdown
 
 syn include @coffee syntax/coffee.vim
 
